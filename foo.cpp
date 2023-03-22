@@ -1,4 +1,3 @@
-void main()
-{
-   return 0;
+void main() {
+  return 0;
 }
