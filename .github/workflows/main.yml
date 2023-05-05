@@ -7,6 +7,7 @@ on:
 
 jobs:
   format:
+    permissions: write-all
     name: Pull Request Verify
     runs-on: ubuntu-latest
     steps:
