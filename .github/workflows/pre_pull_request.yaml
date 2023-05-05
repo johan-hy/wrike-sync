@@ -1,0 +1,15 @@
+name: Pre-PR Check
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - master
+
+jobs:
+  format:
+    name: Pull Request Verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Linked Issue
+        uses: nearform-actions/github-action-check-linked-issues@v1
+        id: check-linked-issues
